@@ -1,9 +1,10 @@
 {
     "app-id": "com.github.lainsce.yishu",
-    "base": "io.elementary.Loki.BaseApp",
+    "base": "io.elementary.BaseApp",
+    "base-version": "juno",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "command": "com.github.lainsce.yishu",
     "finish-args": [
         "--share=ipc",
@@ -21,8 +22,8 @@
             "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/lainsce/yishu/archive/1.0.5.tar.gz",
-                  "sha256": "794db5efb6675eceeb5f59690de319e7b325989ee7036e24ce323b8343c656d6"
+                  "url": "https://github.com/lainsce/yishu/archive/1.0.9.tar.gz",
+                  "sha256": "c630861d8951edac34b1e7a5565acd1848c991999921410e672c77d2721cfc37"
                 }
             ]
         }
