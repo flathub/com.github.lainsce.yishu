@@ -1,0 +1,13 @@
+--- a/src/Application.vala	2019-10-10 23:50:01.146615978 +0200
++++ b/src/Application.vala	2019-10-10 23:50:34.900925009 +0200
+@@ -66,6 +66,10 @@
+ 
+ 		public override void activate(){
+ 			window = new MainWindow(this);
++
++			Gtk.Settings.get_default().set_property("gtk-theme-name", "elementary");
++			Gtk.Settings.get_default().set_property("gtk-icon-theme-name", "elementary");
++
+             var settings = AppSettings.get_default ();
+ 			tasks_list_store = new Gtk.ListStore (6, typeof (string), typeof(string), typeof(GLib.Object), typeof(bool), typeof(bool), typeof(int));
+ 			setup_model();
